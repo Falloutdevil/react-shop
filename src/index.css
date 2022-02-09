@@ -1,5 +1,7 @@
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,11 +11,13 @@ body {
 
 nav {
   padding: 0 1rem;
+  position: fixed;
+  z-index: 2;
 }
 
 .content {
   min-height: calc(100vh - 70px - 64px);
-  padding: 1.5rem 0;
+  padding: 5rem 0;
 }
 
 .goods {
@@ -29,4 +33,25 @@ nav {
 
 .card-content {
   flex-grow: 1;
+}
+
+.cart {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+
+  cursor: pointer;
+  z-index: 5;
+  padding: 1rem;
+}
+
+@media (min-width: 767px){
+  .cart {
+    top: 5rem;
+    bottom: unset;
+  }
+}
+
+.cart-quntity {
+
 }
