@@ -20,7 +20,8 @@ function BasketItem(props) {
                onClick={() => incQuantity(id)}
             >add
             </i> = {price * quantity} руб.
-            <span className="secondary-content" onClick={() => removeFromBasket(id)}>
+            <span
+                className="secondary-content" onClick={() => removeFromBasket(id)}>
                 <i className="material-icons basket-delete">close</i>
             </span>
         </li>
